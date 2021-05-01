@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{# at the terminal, run pip install django-bootstrap4 #}
+{% load bootstrap4 %}
+
+{% block content %}
+  <div class="jumbotron">
+    <div class="container login-container">
+      <form method="POST" class="form">
+        <h1>Login</h1>
+        <p></p>
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+          <button type="submit" class="btn btn-primary">Login</button>
+        {% endbuttons %}
+        <label class="account-status-link" for="create_account">Don't have an account? </label>
+        <a class="account-status-link" id="create_account" href="{% url 'accounts:signup'%}">Create Account</a>
+      </form>
+    </div>
+  </div>
+{% endblock %}

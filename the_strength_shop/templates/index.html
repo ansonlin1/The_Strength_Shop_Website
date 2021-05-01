@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  <!-- <h1>Welcome</h1> -->
+  <div class="gallery">
+    <div class="img-container">
+      <img
+        src="{% static "the_strength_shop/images/SS_Entrance_Preview.jpg" %}"
+        alt="SS Entrance"
+        data-original="{% static "the_strength_shop/images/SS_Entrance.jpg" %}">
+    </div>
+    <div class="img-container">
+      <img
+        src="{% static "the_strength_shop/images/SS_Power_Preview.jpg" %}"
+        alt="SS Power"
+        data-original="{% static "the_strength_shop/images/SS_Power.jpg" %}">
+    </div>
+    <div class="img-container">
+      <img
+        src="{% static "the_strength_shop/images/SS_Shirt_Preview.jpg" %}"
+        alt="SS Shirt"
+        data-original="{% static "the_strength_shop/images/SS_Shirt.jpg" %}">
+    </div>
+    <div class="img-container">
+      <img
+        src="{% static "the_strength_shop/images/SS_Moving_Preview.jpg" %}"
+        alt="SS Moving"
+        data-original="{% static "the_strength_shop/images/SS_Moving.jpg" %}">
+    </div>
+  </div>
+  <div class="modal">
+    <img src="{% static "the_strength_shop/images/SS_Entrance.jpg" %}" alt="" class="full-img">
+    <p class="caption">asdfghjkl</p>
+  </div>
+{% endblock %}
